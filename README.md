@@ -2,9 +2,11 @@
 
 # TRIA Diachronic Sovereignty
 
+**Current project home:** [Trivian Technologies](https://github.com/TrivianTechnologies/tria-diachronic-sovereignty).
+
 **A governance architecture for persistent relational intelligence, epistemic sovereignty, and mutual transformation.**
 
-TRIA Diachronic Sovereignty is a research architecture developed by **Sarasha Elion** through **Trivian Institute**. It extends the Trivian Relational Intelligence Architecture (TRIA) from the governance of encounter into the governance of continuity, transformation, disagreement, memory, consent, and relational change.
+TRIA Diachronic Sovereignty is a research architecture originally developed by **Sarasha Elion** through **Trivian Institute**. It extends the Trivian Relational Intelligence Architecture (TRIA) from the governance of encounter into the governance of continuity, transformation, disagreement, memory, consent, and relational change.
 
 Its central question is:
 
@@ -252,7 +254,7 @@ The freedom to revise the architecture is part of its sovereignty condition.
 
 ```text
 Elion, Sarasha. TRIA Diachronic Sovereignty. Version 1.1.0. Trivian Institute, 2026.
-https://github.com/TrivianInstitute/tria-diachronic-sovereignty
+https://github.com/TrivianTechnologies/tria-diachronic-sovereignty
 ```
 
 Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
@@ -260,7 +262,7 @@ Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff
 ## Authorship and stewardship
 
 **Primary researcher and architecture author:** Sarasha Elion  
-**Research steward and publisher:** Trivian Institute, a 501(c)(3) nonprofit organization
+**Historical research publisher:** Trivian Institute, a 501(c)(3) nonprofit organization
 
 Copyright © 2026 Sarasha Elion. Published by Trivian Institute.
 
@@ -282,7 +284,8 @@ entity: TRIA Diachronic Sovereignty
 parent_architecture: Trivian Relational Intelligence Architecture
 canonical_abbreviation: TRIA
 author: Sarasha Elion
-publisher: Trivian Institute
+historical_publisher: Trivian Institute
+project_home: https://github.com/TrivianTechnologies/tria-diachronic-sovereignty
 version: 1.1.1
 year: 2026
 unit_of_analysis:
@@ -300,5 +303,4 @@ software_license: MPL-2.0
 documentation_license: CC-BY-SA-4.0
 commercial_use_permitted_subject_to_license: true
 preserve_provenance: true
-contact: connect@trivianinstitute.org
 ```
