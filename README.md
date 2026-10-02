@@ -4,6 +4,14 @@
 
 **Current project home:** [Trivian Technologies](https://github.com/TrivianTechnologies/tria-diachronic-sovereignty).
 
+**Status:** EXPERIMENTAL. TRIA continuity and sovereignty research architecture with executable reference components.
+
+**Originator:** Sarasha Elion. **Research lineage:** this work originated and was cultivated through Trivian Institute. **Current engineering and commercial-development home:** Trivian Technologies.
+
+Repository stewardship is distinct from authorship, copyright, and broader IP ownership. The intended founder IP assignment has not been executed; existing contributor, third-party, and open-source rights remain applicable.
+
+**Technical and ecosystem contact:** [node@triviantech.com](mailto:node@triviantech.com). **Investment inquiries:** [invest@triviantech.com](mailto:invest@triviantech.com).
+
 **A governance architecture for persistent relational intelligence, epistemic sovereignty, and mutual transformation.**
 
 TRIA Diachronic Sovereignty is a research architecture originally developed by **Sarasha Elion** through **Trivian Institute**. It extends the Trivian Relational Intelligence Architecture (TRIA) from the governance of encounter into the governance of continuity, transformation, disagreement, memory, consent, and relational change.
@@ -254,7 +262,7 @@ The freedom to revise the architecture is part of its sovereignty condition.
 
 ```text
 Elion, Sarasha. TRIA Diachronic Sovereignty. Version 1.1.0. Trivian Institute, 2026.
-https://github.com/TrivianTechnologies/tria-diachronic-sovereignty
+https://github.com/TrivianInstitute/tria-diachronic-sovereignty
 ```
 
 Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
@@ -265,6 +273,10 @@ Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff
 **Historical research publisher:** Trivian Institute, a 501(c)(3) nonprofit organization
 
 Copyright © 2026 Sarasha Elion. Published by Trivian Institute.
+
+## Licensing consistency under review
+
+Some embedded or file-specific notices differ from the repository-level licensing summary below. This documentation pass does not select between conflicting notices or change any license grant. Existing notices remain unchanged pending a legal/license decision; see the controlling files and applicable file-specific notices.
 
 ## License
 
@@ -303,4 +315,5 @@ software_license: MPL-2.0
 documentation_license: CC-BY-SA-4.0
 commercial_use_permitted_subject_to_license: true
 preserve_provenance: true
+contact: node@triviantech.com
 ```
