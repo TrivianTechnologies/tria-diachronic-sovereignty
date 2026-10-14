@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trivianinstitute.org/schemas/tria-diachronic-sovereignty/repair-record.schema.json",
+  "title": "TRIA Diachronic Sovereignty Rupture / Repair Record",
+  "description": "Draft machine-readable record for rupture, repair offer/response, and repair outcome. Structural validity does not establish factual truth, blame, legitimate consent, reconciliation, or complete restoration.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_version", "relationship_id", "rupture", "repair", "outcome", "provenance"],
+  "properties": {
+    "record_version": { "type": "string", "const": "0.1" },
+    "relationship_id": { "type": "string", "minLength": 1 },
+    "rupture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rupture_id", "recorded_by", "affected_scope", "expectation_or_boundary", "observed_impact", "status"],
+      "properties": {
+        "rupture_id": { "type": "string", "minLength": 1 },
+        "recorded_by": { "type": "string", "minLength": 1 },
+        "affected_scope": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "expectation_or_boundary": { "type": "string", "minLength": 1 },
+        "observed_impact": { "type": "string", "minLength": 1 },
+        "status": {
+          "type": "string",
+          "enum": ["asserted", "acknowledged", "contested", "unresolved"]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "repair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "offered_actions", "accepted_actions", "declined_actions"],
+      "properties": {
+        "repair_id": { "type": ["string", "null"] },
+        "offered_by": { "type": ["string", "null"] },
+        "status": {
+          "type": "string",
+          "enum": ["not_offered", "offered", "accepted", "partially_accepted", "declined", "held", "withdrawn", "unresolved"]
+        },
+        "offered_actions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "accepted_actions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "declined_actions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["restored", "remains_changed", "unresolved"],
+      "properties": {
+        "restored": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "remains_changed": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "unresolved": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "new_baseline_ref": { "type": ["string", "null"] },
+        "next_relational_state": { "type": ["string", "null"] },
+        "review_condition": { "type": ["string", "null"] }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_refs"],
+      "properties": {
+        "event_refs": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "consent_refs": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "authority_refs": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
